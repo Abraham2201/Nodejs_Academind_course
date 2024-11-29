@@ -2,7 +2,7 @@ const express = require('express');
 const parser = require('body-parser');
 const path = require('path');
 const adminData = require('./routes/admin.js');
-const shopRoutes = require('./routes/shop');
+const shopRoutes = require('./routes/shop.js');
 
 const application = express(); //This constant can be used as a handler. so we can pass it into the http.createServer(application);
 
