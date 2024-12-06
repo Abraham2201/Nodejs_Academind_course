@@ -9,7 +9,8 @@ router.get('/add-product', (req, res, next) => {
     // console.log('In the middleware');
     // res.send('<form action="/admin/product" method="POST"><input type="text" name="title"><button type="submit">Add product</button></form>');
     // res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
-    res.render('add-product', { pageTitle: 'Add Product' });
+    res.render('add-product', { pageTitle: 'Add Product', activeValue: 'add' });
+
 });
 
 router.post('/add-product', (req, res, next) => {
