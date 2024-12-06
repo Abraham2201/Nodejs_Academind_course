@@ -46,7 +46,7 @@ main {
 }
 
 .grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;

@@ -21,7 +21,8 @@ application.use(express.static(path.join(__dirname, 'public')));
 application.use('/admin', adminData.routes); // when we add at the beginning the /admin, all routes having /admin will be handled by the adminRouter. It's a filter.
 application.use(shopRoutes);
 application.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'views', 'page-not-found.html'));
+    // res.status(404).sendFile(path.join(__dirname, 'views', 'page-not-found.html'));
+    res.status(404).render('page-not-found');
 });
 
 application.listen(3000);
